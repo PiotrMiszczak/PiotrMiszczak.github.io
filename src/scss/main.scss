@@ -62,11 +62,12 @@ body {
   }
 }
 .skills {
-  padding-left: 120px;
+  padding-left: 7.5rem;
   max-width: 1184px;
   margin-top: 12.5rem;
   @media (max-width:600px){
-    padding-left:5px;}
+    padding-left:5px;
+  padding-right: 5px;}
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -134,11 +135,12 @@ body {
 }
 .projects {
   padding-top: 8rem;
-  padding-left: 120px;
+  padding-left: 7.5rem;
   margin-top: 10.5rem;
   background: #f5f7fa;
   @media (max-width:600px){
-    padding-left:5px;}
+    padding-left:5px;
+  padding-right: 5px;}
   @media (max-width:800px){
     margin-top:7rem;}
   &__header{
@@ -157,6 +159,8 @@ body {
     column-gap: 24px;
     row-gap: 24px;
     max-width: 1184px;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
     @media (max-width:800px){
       display: block;}
   }
@@ -167,13 +171,17 @@ body {
     border-bottom-right-radius: 8px;
     @media (max-width:800px){
       margin: 20px 0 20px 0;}
-
+      &--header{
+        text-transform: capitalize;
+      }
     &--content {
       background-color: #ffffff;
       border: 1px solid #ffffff;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       padding: 3rem;
+      @media (max-width:860px){
+        font-size: 14px;}
     }
   }
   &__footer {
@@ -201,7 +209,7 @@ body {
   margin-top: 1.25rem;
   background-color: $darkblue;
   color: white;
-  padding: 120px;
+  padding: 7.5rem;
   @media (max-width:600px){
     padding-left:5px;}
   &__header {
