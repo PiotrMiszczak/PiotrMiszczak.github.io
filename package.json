@@ -7,17 +7,12 @@
     "predeploy": "gulp build",
     "deploy": "gh-pages -d dist -b master"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/maciejkorsan/wtf-gulp-starter.git"
-  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/maciejkorsan/wtf-gulp-starter/issues"
-  },
-  "homepage": "https://github.com/maciejkorsan/wtf-gulp-starter#readme",
+  
+ 
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
