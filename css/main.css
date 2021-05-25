@@ -529,7 +529,8 @@ body {
       border: 1px solid #ffffff;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
-      padding: 3rem; }
+      padding: 2.5rem;
+      min-height: 260px; }
       @media (max-width: 860px) {
         .projects__item--content {
           font-size: 14px; } }
