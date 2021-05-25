@@ -179,7 +179,8 @@ body {
       border: 1px solid #ffffff;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
-      padding: 3rem;
+      padding: 2.5rem;
+     min-height: 260px;
       @media (max-width:860px){
         font-size: 14px;}
     }
@@ -193,6 +194,8 @@ body {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 8px;
+    
+
 
     &--link {
       margin: 8px 24px 8px 8px;
