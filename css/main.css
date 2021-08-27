@@ -394,8 +394,8 @@ body {
   .skills__wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
     row-gap: 120px;
     padding-top: 128px;
     border-top: 2px solid #c4c4c4; }
