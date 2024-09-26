@@ -14,124 +14,36 @@
   <meta property="og:url" content="https://PiotrMiszczak.github.io" />
   <link rel="icon" type="image/png" href="./assets/img/circle-cropped.png" />
   <link rel="stylesheet" href="./index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-[#282c33] font-firacode p-4">
+  <header class="mb-6 flex flex-row justify-between min-w-full">
+    <span class="text-[#e2e8f0] text-base font-extrabold"><img class="w-7 inline mr-2" src="./assets/img/logo.svg" />Piotr Miszczak</span>
+    <button class="w-7 h-7 relative self-end">
+      <div class="absolute top-1/3 w-[100%] h-0.5 bg-[#e2e8f0]"></div>
+      <div class="absolute right-0 top-2/3 w-[50%] h-0.5 bg-[#e2e8f0]"></div>
+    </button>
+    <div class="self-end hidden">
+    <a class="text-[#ABB2BF] text-lg hover:text-white m-1"><span class="text-[#C778DD] text-xl font-bold">#</span>About</a>
+    <a class="text-[#ABB2BF] text-lg hover:text-white m-1"><span class="text-[#C778DD] text-xl font-bold">#</span>Projects</a>
+    <a class="text-[#ABB2BF] text-lg hover:text-white m-1"><span class="text-[#C778DD] text-xl font-bold">#</span>Contacts</a>
+  </div>
+  </header>
   <main class="main">
-    <section class="about">
-      <img src="./assets/img/circle-cropped.png" class="about__image">
-      <h1 class="main__header">Hey there! My name is Piotr and I am RPA developer and frontend programming enthusiast.
-      </h1>
-      <p class="about__paragraph">You might be interested in checking the list of my skills. Don’t forget to  have a glimpse at my projects. Currently I’m looking for a new challenges so if you have one - contact me 😊</p>
-      <p class="about__mail">miszpiotr@wp.pl</p>
-    </section>
-    <section class="skills">
-      <h2 class="skills__header">My skills</h2>
-    <div class="skills__wrapper">
-      <div>
-      <div class="green__border"></div>
-      <h2>Working skills</h2>
-    </div>
-      <ul class="skills__list">
-        <li class="skills__item">Semantic HTML</li>
-        <li class="skills__item">Git</li>
-        <li class="skills__item">Flexbox, Grid</li>
-        <li class="skills__item">Redux</li>
-        <li class="skills__item">Webpack</li>
-        <li class="skills__item">JS(ES6+, OOP, FP)</li>
-        <li class="skills__item">React.JS</li>
-        <li class="skills__item">Gatsby</li>
-        <li class="skills__item">Working with API</li>
-        <li class="skills__item">Sass</li>
-      </ul>
-      <div>
-      <div class="purple__border"></div>
-      <h2>Know something</br>about</h2>
-      </div>
-      <ul class="skills__list--purple">
-        <li class="skills__item">SQL</li>
-        <li class="skills__item">Server side rendering</li>
-        <li class="skills__item">Mongo DB</li>
-        <li class="skills__item">Node.JS(Express)</li>
-        <li class="skills__item">Progressive web apps</li>                                                                    
-        <li class="skills__item">Headless CMS(GraphQL)</li>
-        <li class="skills__item">Typescript</li>
-      </ul>
-      <div>
+    <section class="">
+     
+      <h2 class="text-2xl font-bold text-[#e2e8f0] leading-10">Hey there! My name is Piotr and <span class="text-[#C778DD]">I am RPA developer and Web Development enthusiast.</span>
+      </h2>
+      <p class="mt-5 mb-5 text-[#99AABB] text-sm">Don’t forget to  have a glimpse at my projects. I’m open for new challenges so if you have one - contact me 😊</p>
+      <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-[#99AABB] rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+        <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#282c33] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+        Purple to pink
+        </span>
+        </button>
+        <img class="m-auto mt-7 mb-5" src="./assets/img/circle-cropped.png" />
       
-  </section class="skills">
-  <section class="projects">
-    <h2 class="projects__header">Recent projects</h2>
-    <p class="projects__paragraph">I started my frontend developer path in 2020 as a hobby. Since then, I’ve built some projects. Here’s the list of the things I’ve done.</p>
-    <div class="projects__wrapper">
-      <div class="projects__item">
-        <div class="projects__item--content">
-        <img src="./assets/img/Vector.svg">
-        <h3 class="projects__item--header">Website for personal trainer (IPR)</h3>
-        <p>Commercial project developed with Gatsby</p>
-      </div>
-        <footer class="projects__footer">
-         <a target='_blank' href="https://trenerpelc.netlify.app/"><img src="./assets/img/Demo Icon.svg"></a><a target='_blank' class="projects__footer--link projects__footer--link-demo" href="https://trenerpelc.netlify.app">Demo</a>
-         <a target='_blank' href="https://github.com/PiotrMiszczak/Website-for-personal-trainer"><img src="./assets/img/Git icon.svg"></a><a target='_blank' class="projects__footer--link" href="https://github.com/PiotrMiszczak/Website-for-personal-trainer">Github</a>
-        </footer>
-      </div>
-      <div class="projects__item">
-        <div class="projects__item--content">
-        <img src="./assets/img/Vector.svg">
-        <h3 class="projects__item--header">Website for dog breeder (IPR)</h3>
-        <p>Commercial project developed with Gatsby</p>
-      </div>
-        <footer class="projects__footer">
-         <a target='_blank' href="https://frenchbulldogs.netlify.app/"><img src="./assets/img/Demo Icon.svg"></a><a target='_blank' class="projects__footer--link projects__footer--link-demo" href="https://frenchbulldogs.netlify.app/">Demo</a>
-         <a target='_blank' href="https://github.com/PiotrMiszczak/French-Bulldogs-project"><img src="./assets/img/Git icon.svg"></a><a target='_blank' class="projects__footer--link" href="https://github.com/PiotrMiszczak/French-Bulldogs-project">Github</a>
-        </footer>
-      </div>
-      <div class="projects__item">
-        <div class="projects__item--content">
-        <img src="./assets/img/Vector.svg">
-        <h3 class="projects__item--header">MyShop</h3>
-        <p>Web Shop created with MERN stack.</p>
-      </div>
-        <footer class="projects__footer">
-         <a target='_blank' href="https://my-shop-pm-app.herokuapp.com"><img src="./assets/img/Demo Icon.svg"></a><a target='_blank' class="projects__footer--link projects__footer--link-demo" href="https://my-shop-pm-app.herokuapp.com">Demo</a>
-         <a target='_blank' href="https://github.com/PiotrMiszczak/MyShop"><img src="./assets/img/Git icon.svg"></a><a target='_blank' class="projects__footer--link" href="https://github.com/PiotrMiszczak/MyShop">Github</a>
-        </footer>
-      </div>
-      <div class="projects__item">
-        <div class="projects__item--content">
-        <img src="./assets/img/Vector.svg">
-        <h3 class="projects__item--header">MapApp</h3>
-        <p>App for recording workouts created with vanilla JS using OOP principles</p>
-      </div>
-        <footer class="projects__footer">
-         <a target='_blank' href="https://ppa-pam.netlify.app/"><img src="./assets/img/Demo Icon.svg"></a><a target='_blank' class="projects__footer--link projects__footer--link-demo" href="https://ppa-pam.netlify.app/">Demo</a>
-         <a target='_blank' href="https://github.com/PiotrMiszczak/Map-app"><img src="./assets/img/Git icon.svg"></a><a target='_blank' class="projects__footer--link" href="https://github.com/PiotrMiszczak/Map-app">Github</a>
-        </footer>
-      </div>
-      <div class="projects__item">
-        <div class="projects__item--content">
-        <img src="./assets/img/Vector.svg">
-        <h3 class="projects__item--header">Quiz PWA</h3>
-        <p>Simple Quiz PWA created with vanilla JS</p>
-      </div>
-        <footer class="projects__footer">
-         <a target='_blank' href="https://piotrmiszczak.github.io/quiz-webpack/"><img src="./assets/img/Demo Icon.svg"></a><a target='_blank' class="projects__footer--link projects__footer--link-demo" href="https://piotrmiszczak.github.io/quiz-webpack/">Demo</a>
-         <a target='_blank' href="https://github.com/PiotrMiszczak/quiz-webpack"><img src="./assets/img/Git icon.svg"></a><a target='_blank' class="projects__footer--link" href="https://github.com/PiotrMiszczak/quiz-webpack">Github</a>
-        </footer>
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div>
-    <div class="blue__border-footer"></div>
-    <h1 class="footer__header">Contact me</h1>
-    <div>
-    <p>I'm open for new opportunities. If you have one, we should talk!</p></br>
-    <div class="footer__links">
-    <a target='_blank' href="https://www.facebook.com/piotr.miszczak.5" class="footer__link"><img src="./assets/img/Vector-facebook.svg"></a>
-    <a target='_blank' href="https://github.com/PiotrMiszczak" class="footer__link"><img src="./assets/img/Vector-github.svg"></a></br>
-    </div>
-    <p class="about__mail about__mail--footer">miszpiotr@wp.pl</p>
-  </footer>
   </main>
 </body>
 </html>
