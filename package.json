@@ -4,7 +4,7 @@
   "description": "- 👉 Link : [https://piotrmiszczak.github.io/](https://piotrmiszczak.github.io/)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html",
+    "start": "parcel src/index.html --no-cache",
     "build": "parcel build src/index.html",
     "deploy": "gh-pages -d dist -b master"
   },

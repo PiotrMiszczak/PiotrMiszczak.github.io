@@ -7,3 +7,20 @@
     font-optical-sizing: auto;
    
 }
+.menu-active{
+    transform: translateX(0%);
+   transition: all .3s ease;
+}
+.button-active div:nth-child(1){
+
+    top: 50%;
+    transform: rotate(45deg);
+    transition: all .3s ease;
+
+}
+.button-active div:nth-child(2){
+    top: 50%;
+    transform:rotate(-45deg);
+    width: 100%;
+    transition: all .3s ease;
+}

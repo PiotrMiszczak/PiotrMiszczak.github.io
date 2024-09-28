@@ -17,29 +17,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+<script src="./index.js"></script>
 </head>
-<body class="bg-[#282c33] font-firacode p-4">
-  <header class="mb-6 flex flex-row justify-between min-w-full">
-    <span class="text-[#e2e8f0] text-base font-extrabold"><img class="w-7 inline mr-2" src="./assets/img/logo.svg" />Piotr Miszczak</span>
-    <button class="w-7 h-7 relative self-end">
-      <div class="absolute top-1/3 w-[100%] h-0.5 bg-[#e2e8f0]"></div>
-      <div class="absolute right-0 top-2/3 w-[50%] h-0.5 bg-[#e2e8f0]"></div>
+<body class="bg-[#282c33] font-firacode">
+  <header class="mb-6 flex flex-row justify-between min-w-full p-4 sm:p-0 z-50">
+    <span class="text-[#e2e8f0] text-base font-extrabold z-50"><img class="w-7 inline mr-2" src="./assets/img/logo.svg" />Piotr Miszczak</span>
+    <button type="menu" id="hamburgerMenu" class="w-7 h-7 relative self-end z-50">
+      <div class="absolute top-1/3 w-[100%] h-0.5 bg-[#e2e8f0] transition ease-in-out duration-300"></div>
+      <div class="absolute right-0 top-2/3 w-[50%] h-0.5 bg-[#e2e8f0] transition ease-in-out duration-300"></div>
     </button>
-    <div class="self-end hidden">
+    <nav class="self-end hidden">
     <a class="text-[#ABB2BF] text-lg hover:text-white m-1"><span class="text-[#C778DD] text-xl font-bold">#</span>About</a>
     <a class="text-[#ABB2BF] text-lg hover:text-white m-1"><span class="text-[#C778DD] text-xl font-bold">#</span>Projects</a>
     <a class="text-[#ABB2BF] text-lg hover:text-white m-1"><span class="text-[#C778DD] text-xl font-bold">#</span>Contacts</a>
-  </div>
+    </nav>
+    
   </header>
-  <main class="main">
+  <nav id="modalMenu" class="bg-[#282c33] flex h-full flex-col justify-between absolute top-0 w-full box-border pb-32 p-4 transition ease-in-out duration-300 translate-x-full"> 
+    <div class="flex flex-col mt-20">
+    <a class="text-[#ABB2BF] mb-8 text-4xl hover:text-white m-1"><span class="text-[#C778DD] text-4xl">#</span>About</a>
+    <a class="text-[#ABB2BF] mb-8 text-4xl hover:text-white m-1"><span class="text-[#C778DD] text-4xl">#</span>Projects</a>
+    <a class="text-[#ABB2BF] mb-8 text-4xl hover:text-white m-1"><span class="text-[#C778DD] text-4xl">#</span>Contacts</a>
+  </div>
+  <div class="flex justify-around">
+    <a href="https://github.com/PiotrMiszczak"><img class="w-16" src="./assets/img/Vector-github.svg"/></a>
+    <a href="https://github.com/PiotrMiszczak"><img src="./assets/img/Linkedin.webp"/></a>
+    
+  </div>
+
+      
+  </nav>
+  
+  <main class="p-4">
     <section class="">
      
       <h2 class="text-2xl font-bold text-[#e2e8f0] leading-10">Hey there! My name is Piotr and <span class="text-[#C778DD]">I am RPA developer and Web Development enthusiast.</span>
       </h2>
       <p class="mt-5 mb-5 text-[#99AABB] text-sm">Don’t forget to  have a glimpse at my projects. I’m open for new challenges so if you have one - contact me 😊</p>
-      <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-[#99AABB] rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+      <button class="-z-10 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-[#99AABB] rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
         <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#282c33] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-        Purple to pink
+        Contact me
         </span>
         </button>
         <img class="m-auto mt-7 mb-5" src="./assets/img/circle-cropped.png" />
