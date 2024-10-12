@@ -1,15 +1,18 @@
 window.onload=function(){
 const hamburgerButton = document.getElementById("hamburgerMenu");
 const modalMenu = document.getElementById("modalMenu");
-hamburgerButton.addEventListener("click",toggleMenu)
-
-
-}
+const links = document.querySelectorAll("#modalMenu li");
+hamburgerButton.addEventListener("click",toggleMenu);
+links.forEach((link)=>link.addEventListener("click",toggleMenu));
 
 function toggleMenu(){
   
     modalMenu.classList.toggle("menu-active");
-    this.classList.toggle("button-active");
+    hamburgerButton.classList.toggle("button-active");
     document.body.classList.toggle("stop-scroll");
    
 }
+
+
+}
+
