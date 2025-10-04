@@ -1,0 +1,2 @@
+window.onload=function(){let e=document.getElementById("hamburgerMenu"),t=document.getElementById("modalMenu"),n=document.querySelectorAll("#modalMenu li");function l(){t.classList.toggle("menu-active"),e.classList.toggle("button-active"),document.body.classList.toggle("stop-scroll")}e.addEventListener("click",l),n.forEach(e=>e.addEventListener("click",l))};
+//# sourceMappingURL=index.9427ad30.js.map
